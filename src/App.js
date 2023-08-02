@@ -25,6 +25,24 @@ const App = () => {
 
   const gonderiyiBegen = (gonderiID) => {
     console.log("gonderiyiBegen tetiklendi", gonderiID);
+
+    /*  const filteredGonderiler = data.filter((gonderi) => {
+        return gonderi.username.includes(gonderiID);
+      }); */
+
+    const newData = [...data];
+
+    newData.map((data) => {
+      //return gonderi.username.includes(gonderiID);
+      if (data.id === gonderiID) {
+        data.likes += 1;
+      }
+
+      return data;
+    });
+
+    setData(newData);
+
     /*
       Bu fonksiyon, belirli bir id ile gönderinin beğeni sayısını bir artırma amacına hizmet eder.
 
