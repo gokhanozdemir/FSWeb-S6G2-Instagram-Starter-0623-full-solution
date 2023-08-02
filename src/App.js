@@ -24,6 +24,7 @@ const App = () => {
   const [aramaKriteri, setAramaKriteri] = useState();
 
   const gonderiyiBegen = (gonderiID) => {
+    console.log("gonderiyiBegen tetiklendi", gonderiID);
     /*
       Bu fonksiyon, belirli bir id ile gönderinin beğeni sayısını bir artırma amacına hizmet eder.
 
