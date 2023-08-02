@@ -59,11 +59,7 @@ const App = () => {
     <div className="App">
       <AramaCubugu aramaKriteri={aramaKriteri} aramaFonksiyonu={handleSearch} />
 
-      <div>
-        {data.map((gonderi) => {
-          return <div>{gonderi.username}</div>;
-        })}
-      </div>
+      <Gonderiler gonderilerProp={data} gonderiyiBegen={gonderiyiBegen} />
 
       {/* Her bileşenin hangi proplara ihtiyaç duyduğunu kontrol edin, eğer ihtiyaç varsa ekleyin! */}
     </div>
