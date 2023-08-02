@@ -69,7 +69,6 @@ const App = () => {
       const filteredGonderiler = data.filter((gonderi) => {
         return gonderi.username.includes(term);
       });
-
       setData(filteredGonderiler);
     }
   };
